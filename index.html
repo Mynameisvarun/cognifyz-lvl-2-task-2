@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple product review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><a href="#"><img src="apple logo.png" alt="apple-logo"></a></div>
+            <div class="nav-items">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Features">Features</a>
+                <a href="#Performance">Performance</a>
+                <a href="#Contact">Contact</a>
+            </div>
+            <div class="hamburger-lines">
+                <div class="three-lines"></div>
+                <div class="three-lines"></div>
+                <div class="three-lines"></div>
+            </div>
+        </nav>
+        
+        <div class="hero">
+            <div class="hero-photo">
+                <h2 class="hero-title">iPhone 15 Pro</h2>
+                <img src="titanium.jpg" alt="phone">
+            </div>
+
+            <div class="hero-details">
+                <button class="buy-btn">Buy</button>
+                <h5>From ₹21483.00/mo. or ₹134900.00*</h5>
+            </div>
+        </div>
+
+    </header>
+
+    <script>
+        const lines = document.querySelector('.hamburger-lines');
+        const navItems = document.querySelector('nav .nav-items');
+
+        lines.addEventListener('click', () => {
+            navItems.classList.toggle('show-menu');
+        });
+    </script>
